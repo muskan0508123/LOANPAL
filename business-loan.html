@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Loan - LoanPal</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Add Google Fonts for Serif -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Serif&display=swap" rel="stylesheet">
+    <!-- Add Animate.css for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        /* Custom styles for animations */
+        .animate-ease-in-out {
+            animation-timing-function: ease-in-out;
+        }
+        /* Apply Serif font to the body */
+        body {
+            font-family: 'Serif', serif;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navbar (Same as index.html with increased font size) -->
+    <!-- Navbar -->
+ <!-- Navbar -->
+ <div style="height: auto; width: 100vw; position: fixed; z-index: 1000;">
+    <nav class="bg-white border-b border-gray-200"> <!-- Added bottom border -->
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-5"> <!-- Increased padding to p-8 -->
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <span class="self-center text-4xl font-extrabold whitespace-nowrap font-sans">LOAN<span class="text-red-500">PAL</span></span>
+            </a>
+            <!-- Contact Button and Mobile Menu Toggle -->
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                <a href="index.html#contact"
+                    class="text-white bg-green-700 hover:bg-green-800 text-2xl focus:ring-4 focus:outline-none focus:ring-green-300 border-green-400 font-medium rounded-lg text-sm px-4 py-2 text-center font-sans">Contact</a>
+                <button data-collapse-toggle="navbar-cta" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                    aria-controls="navbar-cta" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <!-- Navigation Links -->
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+                <ul class="flex flex-col font-large p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white font-sans">
+                    <li>
+                        <a href="index.html" class="block py-2 px-3 md:p-0 text-2xl text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:text-green-500 md:bg-transparent relative group" aria-current="page">
+                            Home
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-green-500 transition-all duration-300 group-hover:w-full"></span> <!-- Underline effect -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about" class="block py-2 px-3 md:p-0 text-2xl text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:text-green-500 md:bg-transparent">About</a>
+                    </li>
+                    <li>
+                        <a href="index.html#products" class="block py-2 px-3 md:p-0 text-2xl  text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:text-green-500 md:bg-transparent relative group">
+                            Products
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-green-500 transition-all duration-300 group-hover:w-full"></span> <!-- Underline effect -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#how-it-works" class="block py-2 px-3 md:p-0 text-2xl text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:text-green-500 md:bg-transparent relative group">
+                            How It Works
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-green-500 transition-all duration-300 group-hover:w-full"></span> <!-- Underline effect -->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+    <!-- Main Content -->
+    <!-- Main Content -->
+<section class="bg-white py-16 pt-32">
+    <div class="max-w-6xl mx-auto px-6">
+        <!-- Heading -->
+        <h1 class="text-4xl font-extrabold text-gray-900 text-left slide-up">Business Loans</h1>
+        <!-- Subheading -->
+        <p class="text-gray-600 mt-4 text-2xl text-left slide-up delay-100">Unlock your financial potential with our flexible personal loans designed to meet your unique needs.</p>
+        <!-- Image -->
+        <div class="mt-8 slide-up delay-200">
+            <img src="https://cdn.b12.io/client_media/c96VjBU9/1dd6d912-cd2a-11ef-b12b-0242ac110002-jpg-regular_image.jpeg" alt="Business Loan" class="w-full h-18 object-cover rounded-lg">
+        </div>
+        <!-- Description -->
+        <div class="mt-8 text-2xl text-gray-700 text-left slide-up delay-300">
+            <p class="mt-4">Empower your business with our specialized business loans designed to fuel growth and innovation. Whether you need capital for expansion, equipment purchases, or working capital,
+                 LoanPal offers a range of flexible financing solutions to suit your specific requirements. Our straightforward application process ensures that you receive funding quickly, allowing you to seize opportunities as they arise. With competitive interest rates and personalized support, we are committed to helping your business thrive. Don’t let financial constraints hold you back;
+                 apply today and watch your business soar to new heights!</p>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Define the slide-up animation */
+    @keyframes slideUp {
+        from {
+            transform: translateY(20px); /* Start 20px below */
+            opacity: 0; /* Start invisible */
+        }
+        to {
+            transform: translateY(0); /* Move to original position */
+            opacity: 1; /* Fade in */
+        }
+    }
+
+    /* Apply the slide-up animation */
+    .slide-up {
+        animation: slideUp 0.8s ease-in-out forwards;
+    }
+
+    /* Add delays for staggered animations */
+    .delay-100 {
+        animation-delay: 0.1s; /* Delay for subheading */
+    }
+    .delay-200 {
+        animation-delay: 0.2s; /* Delay for image */
+    }
+    .delay-300 {
+        animation-delay: 0.3s; /* Delay for description */
+    }
+</style>
+
+<section class="bg-green-600 py-20 mt-16 animate__animated animate__fadeIn animate__delay-0.5s animate-ease-in-out slide-up">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
+        <div class="text-left">
+            <h2 class="text-4xl font-bold text-white">Let's Talk More</h2>
+            <p class="text-2xl text-white mt-2">We'd love to hear from you!</p>
+        </div>
+        <a href="index.html#contact" class="mt-6 md:mt-0 inline-block text-white bg-transparent border-2 border-white hover:bg-white hover:text-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-lg px-8 py-4 animate__animated animate__pulse animate__infinite animate-ease-in-out">Get in Touch</a>
+    </div>
+</section>
+
+<style>
+    /* Define the slide-up animation */
+    @keyframes slideUp {
+        from {
+            transform: translateY(50px); /* Start 50px below */
+            opacity: 0; /* Start invisible */
+        }
+        to {
+            transform: translateY(0); /* Move to original position */
+            opacity: 1; /* Fade in */
+        }
+    }
+
+    /* Apply the slide-up animation */
+    .slide-up {
+        animation: slideUp 0.6s ease-in-out;
+    }
+</style>
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <!-- Top Section -->
+            <!-- Logo -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-extrabold">LOAN<span class="text-red-500">PAL</span></h2>
+            </div>
+            <div class="flex flex-col md:flex-row items-center md:items-start justify-between gap-8">
+                <!-- Footer Links Grid -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 w-full">
+                    <!-- Services -->
+                    <div>
+                        <h3 class="text-lg font-semibold mb-3">Our Services</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li><a href="#" class="hover:text-green-500 transition-transform duration-300 hover:translate-x-2 inline-block">- Loans</a></li>
+                            <li><a href="#" class="hover:text-green-500 transition-transform duration-300 hover:translate-x-2 inline-block">- Car loans</a></li>
+                            <li><a href="#" class="hover:text-green-500 transition-transform duration-300 hover:translate-x-2 inline-block">- Debt consolidation loans</a></li>
+                            <li><a href="#" class="hover:text-green-500 transition-transform duration-300 hover:translate-x-2 inline-block">- Home improvement loans</a></li>
+                            <li><a href="#" class="hover:text-green-500 transition-transform duration-300 hover:translate-x-2 inline-block">- Wedding loans</a></li>
+                            <li><a href="#" class="hover:text-green-500 transition-transform duration-300 hover:translate-x-2 inline-block">- Finance ISA</a></li>
+                        </ul>
+                    </div>
+    
+                    <!-- Company -->
+                    <div>
+                        <h3 class="text-lg font-semibold mb-3">Company</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li><a href="#" class="hover:text-green-500 transition-transform duration-300 hover:translate-x-2 inline-block">- About us</a></li>
+                            <li><a href="#" class="hover:text-green-500 transition-transform duration-300 hover:translate-x-2 inline-block">- Our story</a></li>
+                            <li><a href="#" class="hover:text-green-500 transition-transform duration-300 hover:translate-x-2 inline-block">- Leadership</a></li>
+                            <li><a href="#" class="hover:text-green-500 transition-transform duration-300 hover:translate-x-2 inline-block">- Awards</a></li>
+                            <li><a href="#" class="hover:text-green-500 transition-transform duration-300 hover:translate-x-2 inline-block">- Careers</a></li>
+                        </ul>
+                    </div>
+    
+                    <!-- Legal -->
+                    <div>
+                        <h3 class="text-lg font-semibold mb-3">Legal</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li><a href="#" class="hover:text-green-500 transition-transform duration-300 hover:translate-x-2 inline-block">- Privacy Policy</a></li>
+                            <li><a href="#" class="hover:text-green-500 transition-transform duration-300 hover:translate-x-2 inline-block">- Terms & Conditions</a></li>
+                            <li><a href="#" class="hover:text-green-500 transition-transform duration-300 hover:translate-x-2 inline-block">- Cookie Policy</a></li>
+                            <li><a href="#" class="hover:text-green-500 transition-transform duration-300 hover:translate-x-2 inline-block">- Conflicts Policy</a></li>
+                        </ul>
+                    </div>
+    
+                    <!-- Help -->
+                    <div>
+                        <h3 class="text-lg font-semibold mb-3">Help</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li><a href="#" class="hover:text-green-500 transition-transform duration-300 hover:translate-x-2 inline-block">- Support</a></li>
+                            <li><a href="#" class="hover:text-green-500 transition-transform duration-300 hover:translate-x-2 inline-block">- FAQ</a></li>
+                            <li><a href="#" class="hover:text-green-500 transition-transform duration-300 hover:translate-x-2 inline-block">- Sitemap</a></li>
+                            <li><a href="#contact" class="hover:text-green-500 transition-transform duration-300 hover:translate-x-2 inline-block">- Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Bottom Section -->
+            <div class="mt-10 text-center border-t border-gray-700 pt-6">
+                <p class="text-gray-400 text-sm">&copy; LOANPAL 2025 All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

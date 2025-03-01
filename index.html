@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOANPAL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" src="style.css" />
+
+</head>
+
+<body>
+   
+
+   <!-- Navbar -->
+   <div style="height: auto; width: 100vw; position: fixed; z-index: 1000;">
+    <nav class="bg-white border-b border-gray-200"> <!-- Added bottom border -->
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-5"> <!-- Increased padding to p-8 -->
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <span class="self-center text-4xl font-extrabold whitespace-nowrap font-sans">LOAN<span class="text-red-500">PAL</span></span>
+            </a>
+            <!-- Contact Button and Mobile Menu Toggle -->
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                <a href="index.html#contact"
+                    class="text-white bg-green-700 hover:bg-green-800 text-2xl focus:ring-4 focus:outline-none focus:ring-green-300 border-green-400 font-medium rounded-lg text-sm px-4 py-2 text-center font-sans">Contact</a>
+                <button data-collapse-toggle="navbar-cta" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                    aria-controls="navbar-cta" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <!-- Navigation Links -->
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+                <ul class="flex flex-col font-large p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white font-sans">
+                    <li>
+                        <a href="index.html" class="block py-2 px-3 md:p-0 text-2xl text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:text-green-500 md:bg-transparent relative group" aria-current="page">
+                            Home
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-green-500 transition-all duration-300 group-hover:w-full"></span> <!-- Underline effect -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about" class="block py-2 px-3 md:p-0 text-2xl text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:text-green-500 md:bg-transparent">About</a>
+                    </li>
+                    <li>
+                        <a href="index.html#products" class="block py-2 px-3 md:p-0 text-2xl  text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:text-green-500 md:bg-transparent relative group">
+                            Products
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-green-500 transition-all duration-300 group-hover:w-full"></span> <!-- Underline effect -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#how-it-works" class="block py-2 px-3 md:p-0 text-2xl text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:text-green-500 md:bg-transparent relative group">
+                            How It Works
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-green-500 transition-all duration-300 group-hover:w-full"></span> <!-- Underline effect -->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+    
+<main class="space-y-10">
+    <div class="box relative" style="height: 1000px; width: 100vw; 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('1a881de8-cd2a-11ef-b12b-0242ac110002-jpg-hero_image.jpeg');
+    ">
+        <!-- Overlay for shadow effect -->
+        <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+
+        <!-- Content -->
+        <div class="relative text-center px-6" style="padding-top: 400px;">
+            <h2 class="text-3xl md:text-6xl font-bold text-white">Your loan, your way</h2>
+            <p class="text-4xl mt-4 text-gray-200">Get instant access to funds</p>
+            <a href="#products">
+                <button class="mt-6 px-6 py-2 bg-green-700 text-white text-2xl rounded-lg hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-300" style="z-index: 1;">
+                    VIEW PRODUCTS
+                </button>
+            </a>
+        </div>
+    </div>
+</main>
+       
+
+       </div>
+        <div class="p-6 md:p-10 lg:px-20">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2 flex justify-start">
+                    <div class="w-full max-w-xs md:max-w-sm lg:max-w-md aspect-square overflow-hidden rounded shadow">
+                        <img src="https://cdn.b12.io/client_media/c96VjBU9/1c1dcdba-cd2a-11ef-b12b-0242ac110002-jpg-hero_image.jpeg"
+                            alt="Finance Image" class="w-full h-full object-cover rounded shadow">
+
+                    </div>
+                </div>
+                <div class="md:w-1/2 space-y-4">
+                    <h2 class="text-3xl font-bold mb-4 text-gray-500">EMPOWERING YOUR FINANCES</h2>
+                    <p class="text-green-500">Your trusted loan partner</p>
+                    <p class="text-gray-700 text-1xl font-serif">
+                        LoanPal is your go-to financial assistance platform, based in Lucknow, IN. We provide a variety
+                        of loan options tailored to your needs, ensuring a smooth and efficient process. Our
+                        user-friendly interface allows you to access all the information you need quickly and easily.
+                        Experience instant application processing and dedicated support as we help you secure the funds
+                        you require to achieve your goals. Let us empower your financial journey today!
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center mt-12 gap-12">
+                <div class="md:w-1/2 md:pr-10 order-2 md:order-1 space-y-4">
+                    <h2 class="text-3xl font-bold mb-4 text-gray-500">EMPOWERING YOUR FINANCES</h2>
+                    <p class="text-green-500">How to apply for a personal loan?</p>
+                    <p class="text-gray-700 text-1xl font-serif">
+                        To apply for a loan with us, you need to be: <br>
+                        - At least 21 years’ old; <br>
+                        - Currently in employment with a regular income; <br>
+                        - Resident in the UK; <br>
+                        - UK bank account holder on a debit card. <br>
+                        Simply click Get Started and provide us with a few details to see if you are eligible for a
+                        personal
+                        loan. You’ll receive an instant decision without it affecting your credit score. Successful
+                        applicants can then complete their application and when approved, will get the money same day<span class="text-red-500">*</span>
+                    </p>
+                    <a href="#contact" class="button-link">Get in touch</a>
+                </div>
+                <div class="md:w-1/2 order-1 md:order-2 flex justify-end">
+                    <div class="w-full max-w-xs md:max-w-sm lg:max-w-md aspect-square overflow-hidden rounded shadow">
+                        <img src="https://plus.unsplash.com/premium_photo-1676983352679-38e7f54602f9?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Business Image" class="w-full h-full object-cover rounded shadow">
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center mt-12 gap-12">
+                <div class="md:w-1/2 flex justify-start">
+                    <div class="w-full max-w-xs md:max-w-sm lg:max-w-md aspect-square overflow-hidden rounded shadow">
+                        <img src="https://plus.unsplash.com/premium_photo-1679922879581-5ff33fce0e5a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQxfHxsb2FufGVufDB8fDB8fHww"
+                            alt="Finance Image" class="w-full h-full object-cover rounded shadow">
+                    </div>
+                </div>
+                <div class="md:w-1/2 space-y-4">
+                    <h2 class="text-3xl font-bold mb-4 text-gray-500">EMPOWERING YOUR FINANCES</h2>
+                    <p class="text-green-500">How much can I borrow?</p>
+                    <p class="text-gray-700 text-1xl font-serif">
+                        Loans 2 Go offer personal loans between £250 and £2,000. We do not charge any set up fees, and
+                        there are no fees for repaying your loan early. The repayment period is either 18 or 24 months.
+                        The interest rate and/or term you are offered is dependent on your individual circumstances.
+                    </p>
+                    <a href="#contact" class="button-link">Get in touch</a>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center mt-12 gap-12">
+                <div class="md:w-1/2 md:pr-10 order-2 md:order-1 space-y-4">
+                    <h2 class="text-3xl font-bold mb-4 text-gray-500">EMPOWERING YOUR FINANCES</h2>
+                    <p class="text-green-500">Why take out a personal loan?</p>
+                    <p class="text-gray-700 text-1xl font-serif">
+                        Life is full of ups and downs, and sometimes things just don’t go according to plan. And when
+                        you find yourself in the situation of needing some extra cash, a personal loan could be the
+                        answer. Whether you need money for unexpected bills, car repairs, appliance breakdowns, family
+                        emergencies, or to meet the costs of medical, dental or veterinary treatment, a personal loan
+                        could really help you to sort things out.
+                    </p>
+                    <a href="#contact" class="button-link">Get in touch</a>
+                </div>
+                <div class="md:w-1/2 order-1 md:order-2 flex justify-end">
+                    <div class="w-full max-w-xs md:max-w-sm lg:max-w-md aspect-square overflow-hidden rounded shadow">
+                        <img src="https://plus.unsplash.com/premium_photo-1661753044889-0310ee1ed74e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTg1fHxsb2FufGVufDB8fDB8fHww"
+                            alt="Business Image" class="w-full h-full object-cover rounded shadow">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="bg-[#22242B] py-16 text-center">
+            <h2 class="text-white text-3xl md:text-4xl font-semibold pb-12">What Our Clients Say</h2>
+
+            <div class="flex flex-wrap justify-center gap-6 px-6">
+                <!-- Review Card -->
+                <div class="bg-[#2C2E36] max-w-sm p-6 rounded-xl shadow-lg transition-transform transform hover:-translate-y-2">
+                    <div class="text-yellow-400 text-2xl">★★★★★</div>
+                    <p class="text-gray-300 mt-4">"I found the interest rates to be very competitive compared to other lenders. Would definitely recommend."</p>
+                    <p class="text-orange-500 mt-4 font-medium"><span class="text-orange-400 font-semibold">Maria Smith</span>, 1 month ago</p>
+                </div>
+
+                <div class="bg-[#2C2E36] max-w-sm p-6 rounded-xl shadow-lg transition-transform transform hover:-translate-y-2">
+                    <div class="text-yellow-400 text-2xl">★★★★★</div>
+                    <p class="text-gray-300 mt-4">"I was impressed with the competitive rates offered. I shopped around, and this lender had the best deal for my needs."</p>
+                    <p class="text-orange-500 mt-4 font-medium"><span class="text-orange-400 font-semibold">Marta Black</span>, 2 weeks ago</p>
+                </div>
+
+                <div class="bg-[#2C2E36] max-w-sm p-6 rounded-xl shadow-lg transition-transform transform hover:-translate-y-2">
+                    <div class="text-yellow-400 text-2xl">★★★★★</div>
+                    <p class="text-gray-300 mt-4">"Customer support was incredibly helpful when I had questions about my loan terms. They made everything clear and easy to understand."</p>
+                    <p class="text-orange-500 mt-4 font-medium"><span class="text-orange-400 font-semibold">Carl Brown</span>, 3 weeks ago</p>
+                </div>
+
+                <div class="bg-[#2C2E36] max-w-sm p-6 rounded-xl shadow-lg transition-transform transform hover:-translate-y-2">
+                    <div class="text-yellow-400 text-2xl">★★★★☆</div>
+                    <p class="text-gray-300 mt-4">"The application process was straightforward and quick. I received my loan approval within hours! Highly recommend this service."</p>
+                    <p class="text-orange-500 mt-4 font-medium"><span class="text-orange-400 font-semibold">Paul David</span>, 1 week ago</p>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="bg-white py-16 w-full" id="how-it-works">
+            <section class="max-w-2xl mx-auto bg-white p-8  text-center">
+                <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6">How much do you want to borrow?</h2>
+
+                <div class="text-2xl font-semibold text-orange-600 mt-2">
+                    $<span id="loan-amount">5000</span>
+                </div>
+                <div class="flex items-center justify-center space-x-4">
+                    <!-- Decrease Button -->
+                    <button class="decrease-btn bg-gray-200 hover:bg-gray-300 text-2xl px-4 py-2 rounded-full transition">
+                        −
+                    </button>
+
+                    <!-- Slider -->
+                    <div class="flex flex-col items-center w-full">
+                        <input type="range" min="1000" max="10000" value="5000" class="loan-slider w-full text-orange-600 accent-red-500">
+                    </div>
+
+                    <!-- Increase Button -->
+                    <button class="increase-btn bg-gray-200 hover:bg-gray-300 text-2xl px-4 py-2 rounded-full transition">
+                        +
+                    </button>
+                </div>
+
+                <!-- Payment Info -->
+                <div class="mt-6 text-lg font-medium text-gray-600">
+                    Weekly payments: <span id="weekly-payment" class="text-green-600">$75</span>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="mt-8 space-x-4 flex flex-col sm:flex-row sm:space-x-4 sm:space-y-0 space-y-4">
+                    <button onclick="location.href='#contact'" class="hover:bg-green-500 text-green-500 font-semibold py-3 px-6 rounded-lg border-2 border-green-400 hover:text-white transition">
+                        APPLY RIGHT NOW!
+                    </button>
+                    <button onclick="location.href='#products'" class="bg-gray-200 hover:bg-gray-300 text-gray-700 font-semibold py-3 px-6 rounded-lg shadow-md transition">
+                        SEE OTHER LOANS
+                    </button>
+                </div>
+            </section>
+        </div>
+
+        <section id="products" class="bg-gray-100 py-16">
+            <div class="max-w-6xl mx-auto px-6 text-center">
+                <h4 class="text-green-600 font-semibold tracking-wide text-lg">FLEXIBLE LOAN SOLUTIONS</h4>
+                <h1 class="text-4xl font-extrabold text-gray-900 mt-2">Quick Access to Tailored Financial Options</h1>
+                <div class="grid md:grid-cols-3 gap-8 mt-12">
+                    <!-- Personal Loan -->
+                <a href="personal-loan.html">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                        <img src="https://cdn.b12.io/client_media/c96VjBU9/1e015426-cd2a-11ef-b12b-0242ac110002-jpg-regular_image.jpeg" alt="Personal Loan" class="w-full h-56 object-cover">
+                        <div class="p-6 text-left">
+                            <h3 class="text-xl font-bold text-gray-900">Personal Loans</h3>
+                            <p class="text-gray-600 mt-2">Flexible financing options for your personal needs.</p>
+                        </div>
+                    </div>
+                </a>
+                          <!-- Business Loan -->
+                <a href="business-loan.html">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                        <img src="https://cdn.b12.io/client_media/c96VjBU9/1dd6d912-cd2a-11ef-b12b-0242ac110002-jpg-regular_image.jpeg" alt="Business Loan" class="w-full h-56 object-cover">
+                        <div class="p-6 text-left">
+                            <h3 class="text-xl font-bold text-gray-900">Business Loans</h3>
+                            <p class="text-gray-600 mt-2">Fuel your business growth with tailored financing.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Education Loan -->
+                <a href="education-loan.html">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                        <img src="https://cdn.b12.io/client_media/c96VjBU9/1d86c5c6-cd2a-11ef-b12b-0242ac110002-jpg-regular_image.jpeg" alt="Education Loan" class="w-full h-56 object-cover">
+                        <div class="p-6 text-left">
+                            <h3 class="text-xl font-bold text-gray-900">Education Loans</h3>
+                            <p class="text-gray-600 mt-2">Achieve your academic dreams with flexible loans.</p>
+                        </div>
+                    </div>
+                </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-gray-100 py-16 px-6 text-center">
+            <h4 class="text-green-600 font-semibold tracking-wide text-lg">GET IN TOUCH</h4>
+            <h1 class="text-4xl font-extrabold text-gray-900 mt-2 leading-tight">
+                We're here to assist you with loans.
+            </h1>
+            <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+                <!-- Left Section (Form) -->
+
+                <form class="mt-8 bg-white shadow-lg rounded-lg p-6 space-y-4 text-start">
+                    <div>
+                        <label class="block text-gray-700 font-medium">Full Name <span class="text-red-500">*</span></label>
+                        <input type="text" placeholder="Enter your name"
+                            class="w-full p-3 mt-1 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500">
+                    </div>
+
+                    <div>
+                        <label class="block text-gray-700 font-medium">Email Address <span class="text-red-500">*</span></label>
+                        <input type="email" placeholder="your@email.com"
+                            class="w-full p-3 mt-1 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500">
+                    </div>
+
+                    <div>
+                        <label class="block text-gray-700 font-medium">Phone Number <span class="text-red-500">*</span></label>
+                        <input type="tel" placeholder="123-456-7890"
+                            class="w-full p-3 mt-1 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500">
+                    </div>
+
+                    <div>
+                        <label class="block text-gray-700 font-medium">Message</label>
+                        <textarea placeholder="Write your message here..." rows="4"
+                            class="w-full p-3 mt-1 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500"></textarea>
+                    </div>
+
+                    <div class="flex items-center mb-4">
+                        <input checked id="checkbox-1" type="checkbox" value="" class="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-green-500 focus:ring-2" >
+                        <label for="checkbox-1" class="ms-2 text-sm font-medium text-gray-900 ">I allow LOANPAL to store my submission so they can respond to my inquiry.</label>
+                    </div>
+
+                    <button
+                        class="w-full bg-green-500 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition duration-300">
+                        SUBMIT
+                    </button>
+                </form>
+                <!-- Right Section (Contact Info) -->
+                <div class="mt-8 bg-white shadow-lg rounded-lg p-6 text-start">
+                    <h3 class="text-xl font-bold text-gray-900">Get in Touch</h3>
+                    <p class="text-gray-600 mt-2">📧 loanpal.solutions@gmail.com</p>
+
+                    <h3 class="text-xl font-bold text-gray-900 mt-6">Location</h3>
+                    <p class="text-gray-600 mt-2">📍 London, UK</p>
+
+                    <h3 class="text-xl font-bold text-gray-900 mt-6">Hours</h3>
+                    <ul class="text-gray-600 mt-2 space-y-1">
+                        <li>Monday - Friday: 9:00am – 10:00pm</li>
+                        <li>Saturday: 9:00am – 6:00pm</li>
+                        <li>Sunday: 9:00am – 12:00pm</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-[#141518] text-white py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <!-- Top Section -->
+            <!-- Logo -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-extrabold">LOAN<span class="text-red-500">PAL</span></h2>
+            </div>
+            <div class="flex flex-col md:flex-row items-center md:items-start justify-between gap-8">
+                <!-- Footer Links Grid -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 w-full">
+                    <!-- Services -->
+                    <div>
+                        <h3 class="text-lg font-semibold mb-3">Our Services</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li><a href="#" class="hover:text-green-500 transition-transform duration-300 hover:translate-x-2 inline-block">- Loans</a></li>
+                            <li><a href="#" class="hover:text-green-500 transition-transform duration-300 hover:translate-x-2 inline-block">- Car loans</a></li>
+                            <li><a href="#" class="hover:text-green-500 transition-transform duration-300 hover:translate-x-2 inline-block">- Debt consolidation loans</a></li>
+                            <li><a href="#" class="hover:text-green-500 transition-transform duration-300 hover:translate-x-2 inline-block">- Home improvement loans</a></li>
+                            <li><a href="#" class="hover:text-green-500 transition-transform duration-300 hover:translate-x-2 inline-block">- Wedding loans</a></li>
+                            <li><a href="#" class="hover:text-green-500 transition-transform duration-300 hover:translate-x-2 inline-block">- Finance ISA</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Company -->
+                    <div>
+                        <h3 class="text-lg font-semibold mb-3">Company</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li><a href="#" class="hover:text-green-500 transition-transform duration-300 hover:translate-x-2 inline-block">- About us</a></li>
+                            <li><a href="#" class="hover:text-green-500 transition-transform duration-300 hover:translate-x-2 inline-block">- Our story</a></li>
+                            <li><a href="#" class="hover:text-green-500 transition-transform duration-300 hover:translate-x-2 inline-block">- Leadership</a></li>
+                            <li><a href="#" class="hover:text-green-500 transition-transform duration-300 hover:translate-x-2 inline-block">- Awards</a></li>
+                            <li><a href="#" class="hover:text-green-500 transition-transform duration-300 hover:translate-x-2 inline-block">- Careers</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Legal -->
+                    <div>
+                        <h3 class="text-lg font-semibold mb-3">Legal</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li><a href="#" class="hover:text-green-500 transition-transform duration-300 hover:translate-x-2 inline-block">- Privacy Policy</a></li>
+                            <li><a href="#" class="hover:text-green-500 transition-transform duration-300 hover:translate-x-2 inline-block">- Terms & Conditions</a></li>
+                            <li><a href="#" class="hover:text-green-500 transition-transform duration-300 hover:translate-x-2 inline-block">- Cookie Policy</a></li>
+                            <li><a href="#" class="hover:text-green-500 transition-transform duration-300 hover:translate-x-2 inline-block">- Conflicts Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Help -->
+                    <div>
+                        <h3 class="text-lg font-semibold mb-3">Help</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li><a href="#" class="hover:text-green-500 transition-transform duration-300 hover:translate-x-2 inline-block-transform duration-300 hover:translate-x-2 inline-block">- Support</a></li>
+                            <li><a href="#" class="hover:text-green-500 transition-transform duration-300 hover:translate-x-2 inline-block">- FAQ</a></li>
+                            <li><a href="#" class="hover:text-green-500 transition-transform duration-300 hover:translate-x-2 inline-block">- Sitemap</a></li>
+                            <li><a href="#contact" class="hover:text-green-500 transition-transform duration-300 hover:translate-x-2 inline-block">- Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="mt-10 text-center border-t border-gray-700 pt-6">
+                <p class="text-gray-400 text-sm">&copy; LOANPAL 2025 All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
